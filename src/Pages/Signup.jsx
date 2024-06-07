@@ -16,7 +16,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post ('https://firescrimbackend.onrender.com/register',{name,username,password,freefireid})
+    axios.post ('https://firescrim-backend.vercel.app/register',{name,username,password,freefireid})
     .then(result => {console.log(result) 
         if(result.data == "user already exists"){
           a.textContent ="user already exists";
