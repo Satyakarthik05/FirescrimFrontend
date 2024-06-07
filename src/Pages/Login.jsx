@@ -16,7 +16,7 @@ const Login = () => {
   axios.defaults.withCredentials = true;
   const handleSubmit = (e)=> {
     e.preventDefault()
-    axios.post("https://firescrimbackend.onrender.com/login" , {username,password})
+    axios.post("https://firescrim-backend.vercel.app/login" , {username,password})
     .then(result => {console.log(result)
       if(result.data =="success"){
         navigate("/home")
