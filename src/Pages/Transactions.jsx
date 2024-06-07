@@ -8,7 +8,7 @@ const Transactions = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('https://firescrimbackend.onrender.com/api/items')
+    axios.get('https://firescrim-backend.vercel.app/api/items')
       .then(response => {
         setItems(response.data);
       })
