@@ -46,7 +46,7 @@ const Payment = () => {
 
   const handleSubmit =(e) => {
     e.preventDefault();
-    axios.post("https://firescrimbackend.onrender.com/payment",{username,freefireid,upiid,status})
+    axios.post("https://firescrim-backend.vercel.app/payment",{username,freefireid,upiid,status})
     .then(
       navigate('/home')
     )
